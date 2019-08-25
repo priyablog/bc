@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width,initial-scale-1.0">
+<meta http-equiv-"X-UA-Compatible" content="1e-edge">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<title></title>
+</head>
+<body>
+<div class="header"></div>
+   
+ 
+  <div class="world">
+  <div class="box">
+  <div class="shape1">
+  <div class="heart"></div>
+  </div>
+  <div class="shape2">
+  <div class="heart"></div>
+  </div>
+  </div>
+  <div class="box">
+  <div class="shape1">
+  <div class="heart"></div>
+  </div>
+  <div class="shape2">
+  <div class="heart"></div>
+  </div>
+  </div>
+  <div class="box">
+  <div class="shape1">
+  <div class="heart"></div>
+  </div>
+  <div class="shape2">
+  <div class="heart"></div>
+  </div>
+  </div>
+  <div class="box">
+  <div class="shape1">
+  <div class="heart"></div>
+  </div>
+  <div class="shape2">
+  <div class="heart"></div>
+  </div>
+  </div>
+  </div>
+  <h1><span>B</span>
+  <span>e</span>
+  <span>B</span>
+  <span>y</span>
+  <span>.</span>
+  <span>c</span>
+  <span>o</span>
+  <span>m</span>
+  </h1>
+  <div class="nav">
+
+      <a href="#" class="left">BeBy.com</a>
+    
+  <ul>
+    <li><a href="#">Login</a></li>
+	<li><a href="#">Contact Us</a></li>
+    <li><a href="#">Track order</a></li>
+  </ul>
+ 
+  </div>
+  <form action="">
+	    <input type="search" placeholder="Search your content..">
+		<i class="fa fa-search" aria-hidden="true"></i>
+		</form>
+  <div class="slideshow" style="max-width:500px">
+  <img class="mySlides" src="https://cdn.fcglcdn.com/brainbees/banners/hp_autumn_24aug19.webp" style="width:90%">
+  <img class="mySlides" src="https://cdn.fcglcdn.com/brainbees/banners/hp_diaper_8_24aug19.webp" style="width:90%">
+  <img class="mySlides" src="https://cdn.fcglcdn.com/brainbees/banners/hp2_avent_21may19.webp" style="width:90%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

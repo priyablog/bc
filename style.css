@@ -1,0 +1,271 @@
+html,body{
+width: 100%;
+height: 100%;
+background:#d36e70;
+-webkit-font-smothing: antialiased;
+
+}
+.header{
+width: 1200px;
+height:350px;
+margin:auto;
+}
+
+.h1{
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext');
+h1 span{
+position: relative;
+top: -250px;
+right: -490px;
+display: inlin-block:;
+animation: bounce .7s ease infinite alternate;
+font-family: 'Righteous', cursive;
+font-size: 80px;
+color: #FFF;
+text-shadow: 0 1px 0 #ccc,
+             0 2px 0 #ccc,
+			 0 3px 0 #ccc,
+			 0 4px 0 #ccc, 
+			 0 5px 0 #ccc,
+			 0 6px 0 transparent,
+			 0 7px 0 transparent,
+			 0 8px 0 transparent,
+			 0 9px 0 transparent,
+			 0 10px 10px rgba(0,0,0,0.2);
+}
+h1 span:nth-child(2){animation-delay: .2s}
+h1 span:nth-child(3){animation-delay: .3s}
+h1 span:nth-child(4){animation-delay: .4s}
+h1 span:nth-child(5){animation-delay: .5s}
+h1 span:nth-child(6){animation-delay: .6s}
+h1 span:nth-child(7){animation-delay: .7s}
+h1 span:nth-child(8){animation-delay: .8s}
+@keyframes bounce{
+100%{
+top: -270px;
+text-shadow: 0 1px 0 #ccc,
+             0 2px 0 #ccc,
+             0 3px 0 #ccc,
+			 0 4px 0 #ccc,
+			 0 5px 0 #ccc,
+			 0 6px 0 #ccc,
+			 0 7px 0 #ccc,
+			 0 8px 0 #ccc,
+			 0 9px 0 #ccc,
+			 0 10px 15px rgba(0,0,0,0.2);
+		}
+}
+.world
+{position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom:0;
+margin: auto;
+width: 800px;
+height: 200px;
+}
+.box
+{
+position: absolute;
+top:-400px;
+right:-200px;
+left: 0;
+bottom:0;
+width: 100px;
+height:100px;
+margin:auto;
+animation: rotate 5s ease-in-out infinite;
+transform-style: preserve-3d;
+}
+.box:nth-of-type(1)
+{
+animation-delay: -5s;
+left:-300px;
+
+}
+.box:nth-of-type(2)
+{
+animation-delay: -4s;
+left: -600px;
+}
+.box:nth-of-type(3)
+{
+animation-delay: -3s;
+left: 0px;
+}
+.box:nth-of-type(4)
+{
+animation-delay: -2s;
+left: 300px;
+}
+.shape1, .shape2
+{
+position:absolute;
+opacity:0.8;
+}
+.shape2
+{
+transform: rotateY(90deg);
+}
+.heart
+{
+background-color: lightpink;
+height: 50px;
+transform: rotate(-50deg);
+width:50px;
+}
+.heart::before
+{
+content:'';
+background-color:lightpink;
+border-radius:100%;
+height: 50px;
+position: absolute;
+width: 50px;
+top:-25px;
+}
+.heart::after
+{
+content:'';
+background-color:lightpink;
+border-radius: 100%;
+height: 50px;
+position: absolute;
+width: 50px;
+top: 0px;
+left: 25px;
+}
+@keyframes rotate
+{
+0%
+{
+transform: rotateY(0deg) rotateZ(25deg) translateY(50px);
+}
+50%
+{
+transform: rotateY(270deg) rotateZ(25deg) translateY(-50px);
+}
+100%
+{
+transform: rotateY(360deg) rotateZ(25deg) translateY(50px);
+}
+}
+
+
+
+.nav{
+position:relative;
+left:0;
+bottom:230px;
+width:1300px;
+padding:20px;
+background-color:#822f44;
+margin:auto;
+overflow:auto;
+border-radius:15px;
+box-shadow:4px rgba(0,0,0,.2);
+}
+.left{
+position: absolute;
+}
+nav .left{
+margin:0;
+padding:0;
+float:left;
+}
+
+
+
+ul{
+margin: 0;
+padding:0;
+list-style:none;
+color:grey;
+}
+li{
+float: right;
+}
+a{
+color:white;
+font-size:20px;
+}
+@import url('https://fonts.googleapis.com/css?family=Acme|Luckiest+Guy&display=swap');
+
+a:link{
+width:125px;
+text-decoration:none;
+display:block;
+text-align: center;
+font-size:20px; 
+color:grey;
+font-family: 'Luckiest Guy', cursive;
+}
+a:hover
+{
+color:pink;
+}
+form{
+position:absolute;
+width:60px;
+height:60px;
+left:27%;
+top:49%;
+padding:5px;
+transform: translate(-50%,-50%);
+border-radius:50px;
+border:4px solid #fff;
+box-sizing: border-box;
+background: #fff;
+transition:1.5s
+}
+input{
+position: absolute;
+top:0;
+left:0;
+border:0;
+width: 100%;
+height:52px;
+line-height: 75px;
+outline:0;
+display:none;
+font-size: 16px;
+border-radius:25px;
+padding:0 20px;
+font-family:sans serif;
+}
+i.fa{
+position:absolute;
+top:0;
+right:0;
+width:52px;
+height:52px;
+box-sizing:border-box;
+border-radius:50%;
+text-align:center;
+font-size: 25px;
+transition: 1.5s;
+color:black;
+background:#ba7385;
+padding:15px;
+}
+form:hover{
+width: 400px;
+cursor:pointer;
+}
+form:hover input{
+display: block;
+}
+.mySlides {
+display:none;
+position:absolute;
+left:5.5%;
+top:350px;
+height:75%;
+}
